@@ -1,7 +1,7 @@
 # Single_Cell_BALL_MRD
 Codes and trained models for Paper 'Elucidating Minimal Residual Disease of Pediatric B cell Acute Lymphoblastic Leukemia by Single Cell Analysis'.
 
-- **Cell differentiation stage classifier** 
+- **B cell differentiation stage classifier** 
 
 The B cell differentiation stage classifier  was trained by the one-class logistic regression classifier to distinguish different differentiation stages (HSC/LMPP, CLP, proB, preBI, preBII, immatureB, matureB and activatedB).
 
@@ -39,8 +39,3 @@ Packages and versions:
 [41] Matrix_1.2-18               ggpubr_0.3.0               
 [43] ggplot2_3.3.1               dplyr_1.0.0                
 ```
-
- 
-
-
-
