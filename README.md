@@ -1,17 +1,17 @@
 # Single_Cell_BALL_MRD
 Codes and trained models for Paper 'Elucidating Minimal Residual Disease of Pediatric B cell Acute Lymphoblastic Leukemia by Single Cell Analysis'.
 
-- **B cell differentiation stage classifier** 
+#### B cell differentiation stage classifier
 
 The B cell differentiation stage classifier  was trained by the one-class logistic regression classifier to distinguish different differentiation stages (HSC/LMPP, CLP, proB, preBI, preBII, immatureB, matureB and activatedB).
 
-- **Non-leukemic/leukemic cell classifier**
+#### Non-leukemic/leukemic cell classifier
 
 The Non-leukemic/leukemic cell classifier was trained by a classical binary logistic regression to distinguish non-leukemic and leukemic cells in B-ALL samples.
 
-**Notes**: Codes for the two classifiers are in the folder "Codes", and the trained models are in the folder "Data".
+#### Notes: Codes for the two classifiers are in the folder "Codes", and the trained models are in the folder "Data".
 
-- **R packages and versions**
+#### R packages and versions
 
 ```
 R version 3.6.1 (2019-07-05)
