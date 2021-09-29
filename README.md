@@ -3,13 +3,13 @@ Codes and trained models for Paper 'Elucidating Minimal Residual Disease of Pedi
 
 #### B cell differentiation stage classifier
 
-The B cell differentiation stage classifier  was trained by the one-class logistic regression classifier to distinguish different differentiation stages (HSC/LMPP, CLP, proB, preBI, preBII, immatureB, matureB and activatedB).
+- The B cell differentiation stage classifier  was trained by the one-class logistic regression classifier to distinguish different differentiation stages (HSC/LMPP, CLP, proB, preBI, preBII, immatureB, matureB and activatedB).
 
 #### Non-leukemic/leukemic cell classifier
 
-The Non-leukemic/leukemic cell classifier was trained by a classical binary logistic regression to distinguish non-leukemic and leukemic cells in B-ALL samples.
+- The Non-leukemic/leukemic cell classifier was trained by a classical binary logistic regression to distinguish non-leukemic and leukemic cells in B-ALL samples.
 
-#### Notes: Codes for the two classifiers are in the folder "Codes", and the trained models are in the folder "Data".
+**Notes**: Codes for the two classifiers are in the folder "Codes", and the trained models are in the folder "Data".
 
 #### R packages and versions
 
