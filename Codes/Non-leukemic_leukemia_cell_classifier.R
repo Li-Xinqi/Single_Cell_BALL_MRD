@@ -36,10 +36,11 @@ print("Accuracy:")
 sum(label_pred==use_label_train)/length(label_pred)
 print("Confusion matrix:")
 table(data.frame(truth = use_label_train,pred = label_pred))
+true_pred <- table(data.frame(truth =use_label_train,pred = label_pred))
 F1 <- 2*true_pred[1, 1]/(2*true_pred[1, 1]+true_pred[2, 1]+true_pred[1, 2])
 print("F1:")
 F1
-  
+
 # Apply Non-leukemic/leukemia cell classifier on testing dataset
 print("test")
 df_oclr <- apply( use_data_test, 2, function(z) {sum(mm$w*z)+mm$b} )
@@ -51,8 +52,16 @@ label_pred <- as.factor(label_pred)
 print("Accuracy:")
 sum(label_pred==use_label_test)/length(label_pred)
 print("Confusion matrix:")
-table(data.frame(truth = use_label_test,pred = label_pred))
+table(data.frame(truth = use_label_test, pred = label_pred))
 true_pred <- table(data.frame(truth =use_label_test,pred = label_pred))
 F1 <- 2*true_pred[1, 1]/(2*true_pred[1, 1]+true_pred[2, 1]+true_pred[1, 2])
 print("F1:")
 F1
+
+# ROC and AUC
+ROC <- roc(use_label_test,df_oclr,smooth = FALSE)
+print(paste0("AUC = ", auc(ROC)))
+
+p1 <- ggroc(ROC)+ theme_minimal() + ggtitle(paste0("AUC = ", auc(ROC))) +theme(plot.title = element_text(hjust = 0.5))+
+  geom_segment(aes(x = 1, xend = 0, y = 0, yend = 1), colour = "grey", linetype = "dashed")
+print(p1)
