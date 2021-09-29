@@ -9,7 +9,7 @@ Codes and trained models for Paper 'Elucidating Minimal Residual Disease of Pedi
 
 - The Non-leukemic/leukemic cell classifier was trained by a classical binary logistic regression to distinguish non-leukemic and leukemic cells in B-ALL samples.
 
-**Notes**: Codes for the two classifiers are in the folder "Codes", and the trained models are in the folder "Data".
+**Notes:** Codes for the two classifiers are in the folder "Codes", and the trained models are in the folder "Data".
 
 #### R packages and versions
 
