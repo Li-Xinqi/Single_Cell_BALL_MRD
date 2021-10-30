@@ -37,5 +37,6 @@ Packages and versions:
 [37] irlba_2.3.3                 VGAM_1.1-3                 
 [39] Biobase_2.46.0              BiocGenerics_0.32.0        
 [41] Matrix_1.2-18               ggpubr_0.3.0               
-[43] ggplot2_3.3.1               dplyr_1.0.0                
+[43] ggplot2_3.3.1               dplyr_1.0.0    
+[44] igraph_1.2.5                digest_0.6.25
 ```
